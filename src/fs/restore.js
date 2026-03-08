@@ -30,8 +30,8 @@ const restore = async () => {
     }
     else if(entry.type == 'file'){
       await fs.mkdir(path.dirname(targetPath), {recursive: true});
-      const data = Buffer.from(entry.content);
-      await fs.writeFile(targetPath);
+      const data = Buffer.from(entry.content, 'base64');
+      await fs.writeFile(targetPath, data);
     }
   }
 };
