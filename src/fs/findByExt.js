@@ -1,3 +1,6 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
 const findByExt = async () => {
   // Write your code here
   // Recursively find all files with specific extension
