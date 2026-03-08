@@ -1,0 +1,1 @@
+implement function that reads a checksums.json file
